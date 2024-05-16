@@ -1,3 +1,4 @@
+// Ejercicio 1
 let octavio = {
         nombre: "Octavio",
         apellido: "Guerra",
@@ -9,8 +10,10 @@ let octavio = {
         }
 }
 
+// Ejercicio 2
 octavio.saludar()
 
+// Ejercicio 3
 let vehiculo = {
         marca: "Porsche",
         modelo: "911 Targa",
@@ -31,6 +34,7 @@ console.log("La posicion es", vehiculo.posicion, "luego de avanzar 10 metros en 
 vehiculo.retroceder(5)
 console.log("La posicion es de", vehiculo.posicion, "luego de retroceder 5 metros en un segundo.")
 
+// Ejercicio 4
 let vehiculo_moderno = {
         marca: "Porsche",
         modelo: "911 Turbo",
@@ -50,6 +54,7 @@ let vehiculo_moderno = {
 vehiculo_moderno.moverse(15)
 console.log("La posicion es de", vehiculo_moderno.posicion, "luego de moverse 15 metros positivos en un segundo.")
 
+// Ejercicio 5
 let ironMan = {
         nombre: "Iron Man",
         equipo: "Avengers",
