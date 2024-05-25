@@ -1,4 +1,4 @@
-// completar las variables para que el programa funcione
+// Completar las variables para que el programa funcione.
 
 window.addEventListener('load', function() {
 
