@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Personajes de Rick and Morty</h1>
+    <div class="buscador">
+        <h1>Personajes de Rick and Morty</h1>
+        <a href="favoritos.html" class="favorites-link" style="display: none;">Mis personajes favoritos</a>
+        <form action="results.html" method="GET">
+            <input type="text" name="q" placeholder="Escriba aqui...">
+            <button type="submit">Buscar</button>
+        </form>
+        <button id="clear-storage">Limpiar Favoritos</button>
+    </div>
     <section class="characterList"></section>
     <script src="js/rickAndMorty.js" defer></script>
 </body>

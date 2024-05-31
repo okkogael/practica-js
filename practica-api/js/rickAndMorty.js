@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const nameElement = document.createElement('h2');
             nameElement.textContent = character.name;
+            nameElement.href = `detalle.html?id=${character.id}`;
             
             const speciesElement = document.createElement('p');
             speciesElement.textContent = `Especie: ${character.species}`;
@@ -72,3 +73,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     renderCharacters();
 });
+
+// Codigo para <a> de Personajes Favoritos.
+document.addEventListener("DOMContentLoaded", function() {
+    const favoritesLink = document.querySelector('.favorites-link');
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    if (favorites.length > 0) {
+        favoritesLink.style.display = 'inline';
+    }
+});
+
+// Para motivos de test, sobre todo la funcion del <a> solo si hay favs.
+const clearStorageButton = document.getElementById('clear-storage');
+    clearStorageButton.addEventListener('click', function() {
+        localStorage.clear();
+        favoritesList.innerHTML = '<p>Aún no tienes personajes favoritos.</p>';
+    });
